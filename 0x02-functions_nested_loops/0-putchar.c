@@ -11,12 +11,12 @@ void x_putchar(char x)
 }
 int main()
 {
-	int b=0;
+	int i=0;
 	char txt[] = "_putchar";
-	while(txt[b] != '\0')
+	while(txt[i] != '\0')
 	{
-		x_putchar(txt[b]);
-		b++;
+		x_putchar(txt[i]);
+		i++;
 	}
 	return (0);
 }
