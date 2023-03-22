@@ -1,5 +1,4 @@
 #include <unistd.h>
-
 /**
  * main - Determines if the number is positive , negative or zero
  *
@@ -7,13 +6,14 @@
  */
 void x_putchar(char x)
 {
-	write(1,&x,1);
+	write(1, &x, 1);
 }
-int main()
+int main(void)
 {
-	int i=0;
+	int i = 0;
 	char txt[] = "_putchar";
-	while(txt[i] != '\0')
+	while (txt[i] != '\0')
+
 	{
 		x_putchar(txt[i]);
 		i++;
