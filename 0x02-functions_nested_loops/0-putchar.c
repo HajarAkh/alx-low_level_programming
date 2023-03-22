@@ -1,22 +1,19 @@
-#include <unistd.h>
+#include "main.h"
+
 /**
- * main - Determines if the number is positive , negative or zero
+ * main - Entry point
  *
- * Return: always 0 (Success)
+ * Return: Always 0 (Success)
  */
-void x_putchar(char x)
-{
-	write(1, &x, 1);
-}
+
 int main(void)
 {
-	int i = 0;
-	char txt[] = "_putchar";
-	while (txt[i] != '\0')
+	char str[] = "_putchar";
+	int ch;
 
-	{
-		x_putchar(txt[i]);
-		i++;
-	}
+	for (ch = 0; ch < 8; ch++)
+		_putchar(str[ch]);
+	_putchar('\n')
+		;
 	return (0);
 }
