@@ -1,19 +1,22 @@
-#include "main.h"
-#include <stdio.h>
+#include <unistd.h>
 
 /**
- * print_alphabet - print the alphabet in lowercase
+ * main - Determines if the number is positive , negative or zero
  *
- * Return: void
+ * Return: always 0 (Success)
  */
-void print_alphabet(void)
+void x_putchar(char x)
 {
-	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
-
-	for (i = 0; i < 26; i++)
+	write(1,&x,1);
+}
+int main()
+{
+	int b=0;
+	char txt[] = "_putchar";
+	while(txt[b] != '\0')
 	{
-		putchar(alp[i]);
+		x_putchar(txt[b]);
+		b++;
 	}
-	putchar('\n');
+	return (0);
 }
