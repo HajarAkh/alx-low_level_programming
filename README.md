@@ -1,1 +1,1 @@
-hello world
+C - Structures, typedef
